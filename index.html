@@ -25,7 +25,103 @@
         </div>
       </div>
 </header>
-
+<main>
+    <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+        <div
+          class="products-cetails w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <!-- card  number 1-->
+          <div class="card w-full bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+                <img class="w-full h-40" src="images/triangle.png" alt="triangle">
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Triangle</h2>
+              <p>Area (A) = 0.5 x b x h</p>
+          <div class="flex">
+        <p>
+           <span>b</span>
+            <input
+            type="text"
+            id="first-input"
+            placeholder="Base"
+            class="input input-bordered input-sm w-3/5 max-w-xs"
+          />
+          <span>cm</span>
+        </p>
+        <p>
+            <span>h</span>
+            <input
+              type="text"
+              placeholder="Height"
+              id="second-input"
+              class="input input-bordered input-sm w-3/5 max-w-xs"
+            />
+            <span>cm</span>
+        </p>
+          </div>
+              <div class="card-actions">
+                <button class="btn bg-blue-500 border-none px-12">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- card number 2  -->
+          <div class="card w-full bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+                <img class="w-full h-40" src="images/rectangle.png" alt="triangle">
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Rectangle</h2>
+              <p>Area (A) = w x l</p>
+          <div class="flex">
+        <p>
+           <span>w</span>
+            <input
+            type="text"
+            id="first-input"
+            placeholder="Width"
+            class="input input-bordered input-sm w-3/5 max-w-xs"
+          />
+          <span>cm</span>
+        </p>
+        <p>
+            <span>l</span>
+            <input
+              type="text"
+              placeholder="Length"
+              id="second-input"
+              class="input input-bordered input-sm w-3/5 max-w-xs"
+            />
+            <span>cm</span>
+        </p>
+          </div>
+              <div class="card-actions">
+                <button class="btn bg-blue-500 border-none px-12">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- card number 3  -->
+          <div class="card w-full bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+                <img class="w-full h-40" src="images/parallelogram.png" alt="triangle">
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Parallelogram</h2>
+              <p>Area (A) = b x h</p>
+          <div class="flex">
+        <p class="mb-2 text-xl">
+            b=10cm, h=12cm
+        </p>
+          </div>
+              <div class="card-actions">
+                <button class="btn bg-blue-500 border-none px-12">Calculate</button>
+              </div>
+            </div>
+          </div>
+        
+        </div>  
+    </section>
+</main>
     <script src="js/main.js"></script>
 </body>
 </html>
