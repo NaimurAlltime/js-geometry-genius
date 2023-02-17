@@ -28,7 +28,7 @@
 <main>
     <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
         <div
-          class="products-cetails w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          class="products-cetails w-full md:w-[70%] lg:w-[70%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           <!-- card  number 1-->
           <div class="card w-full bg-base-100 shadow-xl">
@@ -164,8 +164,28 @@
                 </div>
             </div>
           </div>
+        </div>
 
-        </div>  
+        <!-- cart details div  -->
+        <div class="cart-details w-full md:w-[30%] lg:w-[30%] mx-auto mt-7">
+            <h1 class="text-3xl text-center font-bold underline mt-5">
+              Area Calculation <span id="total-product">0</span>
+            </h1>
+            <div class="overflow-x-auto">
+              <table class="table w-full">
+                <thead>
+                  <tr>
+                    <th>Serial No.</th>
+                    <th>Name</th>
+                    <th>Area</th>
+                    <th>Convert</th>
+                  </tr>
+                </thead>
+                <tbody id="table-container">
+                </tbody>
+              </table>
+            </div>
+          </div>
     </section>
 </main>
     <script src="js/main.js"></script>
