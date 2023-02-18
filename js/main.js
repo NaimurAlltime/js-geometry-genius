@@ -37,7 +37,7 @@ document.getElementById('second-card').addEventListener('click', function(){
         return;
     }
     serial += 1;
-    
+
     const rectangleAreaToFixed = rectangleArea.toFixed(2);
 
      // condition check and show data 
@@ -133,3 +133,13 @@ document.getElementById('six-card').addEventListener('click', function(){
         }
 });
 
+
+// mouse enter in card background color change function
+function changeBgRandomColor(cardElementId){
+    document.getElementById(cardElementId).style.backgroundColor = 'rgb('+ Math.round(Math.random()*255)+ ','+ Math.round(Math.random()*255)+ ',' + Math.round(Math.random()*255)+')' ;
+}
+
+// on mouse leave change color default function
+function backDefaultColor(cardElementId){
+    document.getElementById(cardElementId).style.backgroundColor = 'white';
+}
