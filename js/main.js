@@ -2,11 +2,16 @@ let serial = 0;
 
 // first card area calculation
 document.getElementById('first-card').addEventListener('click', function(){
-    serial += 1;
     const name = document.getElementById('first-card-name').innerText;
 
     //  get the data using common function by getInputValueById
     const baseHeightMultiple = getInputValueById('triangle-base', 'triangle-height');
+    // validation get none value 
+    if(isNaN(baseHeightMultiple)){
+        return;
+    }
+    serial += 1;
+
     const half = 0.5;
     // area calculate 
     const triangleArea = half * baseHeightMultiple;
@@ -23,11 +28,16 @@ document.getElementById('first-card').addEventListener('click', function(){
 
 // second card area calculation
 document.getElementById('second-card').addEventListener('click', function(){
-    serial += 1;
     const name = document.getElementById('second-card-name').innerText;
 
     //  get the data using common function by getInputValueById
     const rectangleArea = getInputValueById('rectangle-width', 'rectangle-length');
+    // validation get none value 
+    if(isNaN(rectangleArea)){
+        return;
+    }
+    serial += 1;
+    
     const rectangleAreaToFixed = rectangleArea.toFixed(2);
 
      // condition check and show data 
