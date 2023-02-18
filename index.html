@@ -12,6 +12,7 @@
 </head>
 <body>
 <header>
+  <!-- navbar start  -->
     <div class="navbar bg-emerald-50 lg:px-16">
         <div class="navbar-start">
           <a class="text-lg">
@@ -24,9 +25,11 @@
             <button class="bg-blue-500 outline-none text-white text-xl px-6 py-2 rounded-md">Blog</button>
         </div>
       </div>
+      <!-- navbar end  -->
 </header>
 <main>
     <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+      <!-- card section start  -->
         <div
           class="products-cetails w-full md:w-[70%] lg:w-[70%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
@@ -138,13 +141,13 @@
                 <img class="w-full h-40" src="images/pentagon.png" alt="triangle">
             </figure>
             <div class="card-body items-center text-center">
-                <h2 class="card-title">Pentagon</h2>
+                <h2 id="five-card-name" class="card-title">Pentagon</h2>
                 <p>Area (A) = 0.5 x p x b</p>
               <p class="mb-2 text-xl">
-                   p = 6cm, b = 10cm
+                   p = <span id="pentagon-perimeter">6</span>cm, b = <span id="pentagon-base">10</span>cm
               </p>
                 <div class="card-actions">
-                <button class="btn bg-blue-500 border-none px-16">Calculate</button>
+                <button id="five-card" class="btn bg-blue-500 border-none px-16">Calculate</button>
                 </div>
             </div>
            </div>
@@ -154,19 +157,20 @@
                 <img class="w-full h-40" src="images/ellipse.png" alt="triangle">
             </figure>
             <div class="card-body items-center text-center">
-                <h2 class="card-title">Ellipse</h2>
+                <h2 id="six-card-name" class="card-title">Ellipse</h2>
                 <p>Area (A) = πab</p>
              <p class="mb-2 text-xl">
-                 a = 10cm, b = 4cm
+                 a = <span id="semi-major-axis">10</span>cm, b = <span id="semi-minor-axis">4</span>cm
              </p>
                 <div class="card-actions">
-                <button class="btn bg-blue-500 border-none px-16">Calculate</button>
+                <button id="six-card" class="btn bg-blue-500 border-none px-16">Calculate</button>
                 </div>
             </div>
           </div>
         </div>
+         <!-- card section end  -->
 
-        <!-- cart details div  -->
+        <!--  Area Calculation div start -->
         <div class="cart-details w-full md:w-[30%] lg:w-[30%] mx-auto mt-7">
             <h1 class="text-3xl text-center font-bold underline mt-5">
               Area Calculation
@@ -175,7 +179,7 @@
               <table class="table w-full">
                 <thead>
                   <tr>
-                    <th>Serial No.</th>
+                    <th>No.</th>
                     <th>Name</th>
                     <th>Area</th>
                     <th>Convert</th>
@@ -186,6 +190,7 @@
               </table>
             </div>
           </div>
+         <!--  Area Calculation div start -->
     </section>
 </main>
     <script src="js/utilities.js"></script>

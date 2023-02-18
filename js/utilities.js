@@ -1,4 +1,4 @@
-// common function get input value
+// common function get the input value
 function getInputValueById(firstElementId, secondElementId){
     const firstInputElement = document.getElementById(firstElementId);
     const firstInputValueString = firstInputElement.value;
@@ -18,7 +18,7 @@ function getInputValueById(firstElementId, secondElementId){
     return multiple;
 }
 
-// common function get text value
+// common function get the text value
 function getTextValueById(firstElementId, secondElementId){
     const firstInputElement = document.getElementById(firstElementId);
     const firstInputValueString = firstInputElement.innerText;
