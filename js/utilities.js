@@ -18,6 +18,22 @@ function getInputValueById(firstElementId, secondElementId){
     return multiple;
 }
 
+// common function get text value
+function getTextValueById(firstElementId, secondElementId){
+    const firstInputElement = document.getElementById(firstElementId);
+    const firstInputValueString = firstInputElement.innerText;
+    const firstInputValue = parseFloat(firstInputValueString);
+
+    const secondInputElement = document.getElementById(secondElementId);
+    const secondInputValueString = secondInputElement.innerText;
+    const secondInputValue = parseFloat(secondInputValueString);
+
+    // multiply two input value 
+    const multiple = firstInputValue * secondInputValue;
+
+    return multiple;
+}
+
 // common function to display data
 function displayData(name, area) {
     const container = document.getElementById("table-container");
